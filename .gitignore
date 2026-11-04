@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+/tmp/
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# OS
+Thumbs.db
+
+# RKNN model (binaries too large for git — upload via GitHub Release or Git LFS)
+*.rknn
+*.onnx
+*.pt
+*.pth
