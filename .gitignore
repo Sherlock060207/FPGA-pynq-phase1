@@ -1,25 +1,43 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.egg-info/
-.eggs/
+# PYNQ source checkout and third-party source
+pynq-2.3-source/
 
-# Logs
+# Vivado/Vitis generated output
+**/.Xil/
+**/.cache/
+**/.runs/
+**/.gen/
+**/.hw/
+**/vivado_proj/*.jou
+**/vivado_proj/*.log
+**/vivado_proj/*.str
+**/vivado_proj/*.backup
+**/vivado_proj/*.pid
+**/vivado_proj/*.wdb
+**/vivado_proj/*.wcfg
+**/vivado_proj/conv3x3_pynq.runs/
+**/vivado_proj/conv3x3_pynq.cache/
+**/vivado_proj/conv3x3_pynq.gen/
+**/vivado_proj/conv3x3_pynq.hw/
+**/vivado_proj/conv3x3_pynq.ip_user_files/
+**/vivado_proj/conv3x3_pynq.sim/
+**/vivado_proj/conv3x3_pynq.srcs/sources_1/bd/*/ipshared/
+**/conv3x3_hlssolution1/hls/csim/
+**/conv3x3_hlssolution1/hls/syn/
+**/conv3x3_hlssolution1/hls/impl/
+**/logs/
+**/_xsa_extract/
+
+# Runtime logs and temporary files
+*.jou
 *.log
-/tmp/
-
-# IDE / Editor
-.idea/
-.vscode/
+*.pid
+*.tmp
 *.swp
-.DS_Store
+__pycache__/
+.ipynb_checkpoints/
 
-# OS
-Thumbs.db
+# Credentials and local configuration
+.env
+*.pem
+*.key
 
-# RKNN model (binaries too large for git — upload via GitHub Release or Git LFS)
-*.rknn
-*.onnx
-*.pt
-*.pth
